@@ -1,6 +1,6 @@
 # 🔒 Make All Public GitHub Repositories Private (Lazy Bash Script)
 
-A quick-and-dirty Bash script to mass-change all your public repositories to private using the GitHub CLI.
+A quick-and-dirty Bash script to mass-change all your **public** repositories to **private** using the [GitHub CLI](https://cli.github.com).
 
 Perfect for when you’ve outgrown your old code, want a fresh start, or simply don’t want strangers poking around your half-baked experiments.
 
@@ -8,13 +8,13 @@ Perfect for when you’ve outgrown your old code, want a fresh start, or simply 
 
 - Lists all public repositories under your GitHub account.
 
-- Asks for final confirmation before making changes.
+- Prompts for confirmation before proceeding.
 
-- Converts each one to private, one by one.
+- Converts each listed repo to **private**, one by one.
 
 ## ⚠️ Irreversible Consequences
 
-Please read before running:
+Read this **before running** the script:
 
 - ⭐ **Stars and watchers will be permanently lost**.
 
@@ -50,20 +50,20 @@ This script is **not reversible**. Proceed with caution.
     cd make-all-repo-private    
     ```
 
-4. **Edit the script with your username**
-    Open the file with your editor:
+4. **Edit the script with your GitHub username**
+    Open the file in your editor:
 
     ```bash
     nvim all-private.sh
     ```
 
-    And replace:
+    Then change:
 
     ```bash
     USERNAME="your-username"
     ```
 
-    with your actual GitHub username.
+    Replace `"your-username"` with your actual GitHub username.
 
 5. **Make the script executable**
 
@@ -77,4 +77,4 @@ This script is **not reversible**. Proceed with caution.
     ./all-private.sh
     ```
 
-    Make sure to have some coffee prepared ☕
+☕ You might want to have some coffee ready — especially if you have a long list of repos.
